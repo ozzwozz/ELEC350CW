@@ -8,6 +8,9 @@ Contains all Methods relating to the SD Card
 */
 
 #include "mbed.h"
+#include "SDFileSystem.h"
+#include "iostream"
+
 void SD_Card()
 {
 
@@ -27,7 +30,7 @@ void SD_Card_FileOpen()
     if (fp == NULL){
         cout << "File does not found or able to be opened";
     }
-    fprintf(fp, "/")
+    fprintf(fp, "/");
 }
 void SD_deinit()
 {
