@@ -12,8 +12,8 @@ int main()
 {
     SD_Active.rise(&SD_init)
     SD_Active.fall(&SD_deinit)
-    t1.start();
-    t2.start();
+    t1.start(Sensor);
+    t2.start(Output);
     t3.start(Ethernet);
     t4.start(SD_Card);
 

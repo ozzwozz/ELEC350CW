@@ -21,7 +21,9 @@ void SD_init()
 
 void SD_Card_FileOpen()
 {
-    FILE *fp = fopen("/sd/Data.txt", "w");
+    FATFileSystem fs("sd", &sd);
+    FILE *fp = fopen("/sd/Data.txt", "w");  // attempt to open the file
+   // if the file opening is null
     if (fp == NULL){
         cout << "File does not found or able to be opened";
     }
