@@ -6,6 +6,8 @@ Dates - 24/11/2020
 Contains all Methods relating to the SD Card
 
 */
+
+#include "mbed.h"
 void SD_Card()
 {
 

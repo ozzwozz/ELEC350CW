@@ -14,8 +14,8 @@ int main()
     SD_Active.fall(&SD_deinit)
     t1.start();
     t2.start();
-    t3.start();
-    t4.start();
+    t3.start(Ethernet);
+    t4.start(SD_Card);
 
 
 }
